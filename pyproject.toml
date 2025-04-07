@@ -1,3 +1,34 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "excepthook"
+version = "0.1.0"
+description = "Enhanced exception handler with intelligent LLM that can fix errors and enhance output"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Richmond Koomson", email = "rkoomson777@gmail.com" }
+]
+
+dependencies = [
+  "rich",
+  "langchain",
+  "langchain_groq",
+  "dotenv"
+]
+
+[project.urls]
+Homepage = "https://github.com/khonello/ExceptHook"
+
+[project.scripts]
+install_hook = "install:write_sitecustomize"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages]
+find = {}
