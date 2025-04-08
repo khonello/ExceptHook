@@ -17,11 +17,12 @@ def write_sitecustomize():
                 sitecustomize = os.path.join(sitepackage_directory, "sitecustomize.py")
                 if os.path.exists(sitecustomize):
 
-                    shutil.copyfile(sitecustomize, f"{sitecustomize}.bak")
+                    # shutil.copyfile(sitecustomize, f"{sitecustomize}.bak")
+                    os.remove(sitecustomize)
                 
                 with open(sitecustomize, "w") as w:
                     with open(os.path.join(sitepackage_directory, "excepthook", "code.py"), "r") as r:
                         
                         w.write(r.read())
-                print("Successfully wrote sitecustomize.py")
+                print("Successful")
                 
