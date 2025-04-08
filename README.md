@@ -21,10 +21,10 @@ This will enhance the traceback in a well structured way
 Create a virtual environment and activate it
 
 #### Method 1
-- Build the package locally and install using this command `pip install .`
+- Clone the project and build the package locally then install using this command `pip install .`
 
 #### Method 2
-- Install from PyPi using this command `pip install excepthook`.
+- Install from PyPI using this command `pip install excepthook`.
 
 #### Setup 
 - Create a `.env` file with your `GROQ_API_KEY`
