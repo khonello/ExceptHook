@@ -30,4 +30,19 @@ Create a virtual environment and activate it
 - Create a `.env` file with your `GROQ_API_KEY`
 - Run `install_hook` to write the `sitecustomize.py` in the `sitepackages` directory which will be providing the features.
 
+```
+Python
+
+#: enhance
+#: fix
+
+def foo(*args, **kwargs):
+
+    if not args:
+        raise ValueError("No arguments provided")
+
+foo()
+```
+> This sample code will print a well structured visually appealing traceback and then fix the error.
+
 Note: Enusre you have created a virtual environment, activated it and installed the packge in it.
