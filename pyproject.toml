@@ -25,10 +25,10 @@ dependencies = [
 Homepage = "https://github.com/khonello/ExceptHook"
 
 [project.scripts]
-install_hook = "install:write_sitecustomize"
+install_hook = "excepthook.install:write_sitecustomize"
 
 [tool.setuptools]
 include-package-data = true
 
-[tool.setuptools.packages]
-find = {}
+[tool.setuptools.packages.find]
+where = ["."]

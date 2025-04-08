@@ -20,7 +20,7 @@ def write_sitecustomize():
                     shutil.copyfile(sitecustomize, f"{sitecustomize}.bak")
                 
                 with open(sitecustomize, "w") as w:
-                    with open("code.py", "r") as r:
+                    with open(os.path.join(sitepackage_directory, "excepthook", "code.py"), "r") as r:
                         
                         w.write(r.read())
                 print("Successfully wrote sitecustomize.py")
