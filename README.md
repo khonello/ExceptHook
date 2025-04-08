@@ -30,4 +30,4 @@ Create a virtual environment and activate it
 - Create a `.env` file with your `GROQ_API_KEY`
 - Run `install_hook` to write the `sitecustomize.py` in the `sitepackages` directory which will be providing the features.
 
-Note: Must be in an environment.
+Note: Enusre you have created a virtual environment, activated it and installed the packge in it.
