@@ -10,12 +10,16 @@ In any module that you are working in, when you run the module and an exception 
 If anywhere in your code there are any of these options trigger different behaviours.
 - `#: fix`
 - `#: enhance`
+- `#: explain`
 
 ##### Fix
 This will contact `Groq` LLM to fix the exception code.
 
 ##### Enhance
-This will enhance the traceback in a well structured way
+This will enhance the traceback in a well structured way.
+
+##### Explain
+This will provide an explanation on what triggered the exception and how to fix it as comment at the top.
 
 #### Environment
 Create a virtual environment and activate it
